@@ -1,0 +1,57 @@
+/*———————————— import ————————————*/
+@import "../static/init";
+@import "../static/global";
+
+/*———————————— init ————————————*/
+html{overflow-y:scroll;}/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+body,h1,h2,h3,h4,p,dl,dt,dd,ul,ol,li,button,input,textarea,th,td,section{margin:0;padding:0;}
+h1,h2,h3,h4,p{lh 160%  ;}
+ul,ol{list-style:none;}
+p{tj;}
+a{text-decoration:none;}
+img{border:none;}
+button,input,select,textarea{font-size:100%;}/* 使得表单元素在 ie 下能继承字体大小 */
+:focus{outline:0}
+table{border-collapse:collapse;border-spacing:0;}
+figure{margin:0;}
+/*清除浮动*/
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;height:0;font-size:0;}
+.clearfix{*zoom:1;} 
+
+/*———————————— common ————————————*/
+
+body{bg #2f3239  ;w 100%  ;overflow-x:hidden;}
+a{tdn;transition .2s  ;}
+a:hover{tdn;}
+
+/*———————————— header ————————————*/
+#header{
+    &{bg #26292e  ;h 50px  ;p 0 16px  ;pr;}
+    h1{fl;hlh 50px  ;f 20px  ;c;}
+    a{dib;hlh 50px  ;f 14px  ;c;ml 30px  ;}
+    a.on,a:hover{c #ad3701  ;}
+    .toggle{fr;db;hlh 50px  ;tc;w 50px  ;c;dn;rotate 90deg  ;cp;}
+}
+
+@media screen and (min-width: 540px){
+	#header nav{
+        &{fr;oh;}
+    }
+    .is-show{display:block !important;}
+
+    /* index */
+    .main .aside-nav{}
+}
+@media screen and (max-width: 540px){
+	#header nav{
+		&{pa;t 52px  ;r 3px  ;}
+		a{hlh 28px  ;db;w 70px  ;tc;c;bg #26292e  ;bb 1px solid #555  ;}
+	}
+	#header .toggle{db;}
+	.is-show{display:none;}
+}
+
+/*———————————— footer ————————————*/
+#footer{
+    
+}

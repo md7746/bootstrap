@@ -1,0 +1,21 @@
+/*———————————— import ————————————*/
+@import "../static/init";
+@import "../static/global";
+
+/*———————————— 关于我们 ————————————*/
+.main{
+	&{tc;c;}
+	h2{fn;c9;}
+	p{tc;c6;}
+	.main-inner{pt 50px  ;}
+	.aside-nav{
+		ul li a{hlh 46px  ;db;c #585b62  ;}
+		a.on,a:hover{f 20px  ;c;}
+	}
+	.img{
+		&{mt 13px  ;}
+		.img-inner{w 242px  ;h 172px  ;oh;m 0px auto  ;mb 25px  ;}
+		img{w 242px  ;transition .8s  ;}
+		.img-inner:hover img{scale 1.3  ;}
+	}
+}
